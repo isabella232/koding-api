@@ -67,8 +67,8 @@
       if (data.hasOwnProperty('slug')) {
         obj['slug'] = ApiClient.convertToType(data['slug'], 'String');
       }
-      if (data.hasOwnProperty('data')) {
-        obj['data'] = ApiClient.convertToType(data['data'], Object);
+      if (data.hasOwnProperty('payload')) {
+        obj['payload'] = ApiClient.convertToType(data['payload'], Object);
       }
     }
     return obj;
@@ -83,9 +83,9 @@
    */
   exports.prototype['slug'] = undefined;
   /**
-   * @member {Object} data
+   * @member {Object} payload
    */
-  exports.prototype['data'] = undefined;
+  exports.prototype['payload'] = undefined;
 
 
 

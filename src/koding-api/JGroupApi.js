@@ -585,7 +585,7 @@
 
 
     /**
-     * Method JGroup.fetchDataAt
+     * 
      * @param {String} id Mongo ID of target instance
      * @param {module:koding-api/DefaultSelector} body body of the request
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:koding-api/DefaultResponse}

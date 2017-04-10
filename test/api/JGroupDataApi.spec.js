@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new KodingApi.JGroupData();
+    instance = new KodingApi.JGroupDataApi();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,31 +47,17 @@
       object[property] = value;
   }
 
-  describe('JGroupData', function() {
-    it('should create an instance of JGroupData', function() {
-      // uncomment below and update the code to test JGroupData
-      //var instane = new KodingApi.JGroupData();
-      //expect(instance).to.be.a(KodingApi.JGroupData);
+  describe('JGroupDataApi', function() {
+    describe('fetchByKey', function() {
+      it('should call fetchByKey successfully', function(done) {
+        //uncomment below and update the code to test fetchByKey
+        //instance.fetchByKey(function(error) {
+        //  if (error) throw error;
+        //expect().to.be();
+        //});
+        done();
+      });
     });
-
-    it('should have the property id (base name: "_id")', function() {
-      // uncomment below and update the code to test the property id
-      //var instane = new KodingApi.JGroupData();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property slug (base name: "slug")', function() {
-      // uncomment below and update the code to test the property slug
-      //var instane = new KodingApi.JGroupData();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property payload (base name: "payload")', function() {
-      // uncomment below and update the code to test the property payload
-      //var instane = new KodingApi.JGroupData();
-      //expect(instance).to.be();
-    });
-
   });
 
 }));

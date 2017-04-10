@@ -203,6 +203,7 @@ Class | Method | HTTP request | Description
 *KodingApi.JGroupApi* | [**transferOwnership**](docs/JGroupApi.md#transferOwnership) | **POST** /JGroup.transferOwnership/{id} | 
 *KodingApi.JGroupApi* | [**unblockMember**](docs/JGroupApi.md#unblockMember) | **POST** /JGroup.unblockMember/{id} | 
 *KodingApi.JGroupApi* | [**updatePermissions**](docs/JGroupApi.md#updatePermissions) | **POST** /JGroup.updatePermissions/{id} | 
+*KodingApi.JGroupDataApi* | [**fetchByKey**](docs/JGroupDataApi.md#fetchByKey) | **POST** /JGroupData.fetchByKey | 
 *KodingApi.JInvitationApi* | [**accept**](docs/JInvitationApi.md#accept) | **POST** /JInvitation.accept/{id} | 
 *KodingApi.JInvitationApi* | [**byCode**](docs/JInvitationApi.md#byCode) | **POST** /JInvitation.byCode | 
 *KodingApi.JInvitationApi* | [**create**](docs/JInvitationApi.md#create) | **POST** /JInvitation.create | 
@@ -243,14 +244,6 @@ Class | Method | HTTP request | Description
 *KodingApi.JProvisionerApi* | [**setAccess**](docs/JProvisionerApi.md#setAccess) | **POST** /JProvisioner.setAccess/{id} | 
 *KodingApi.JProvisionerApi* | [**some**](docs/JProvisionerApi.md#some) | **POST** /JProvisioner.some | 
 *KodingApi.JProvisionerApi* | [**update**](docs/JProvisionerApi.md#update) | **POST** /JProvisioner.update/{id} | 
-*KodingApi.JProxyFilterApi* | [**create**](docs/JProxyFilterApi.md#create) | **POST** /JProxyFilter.create | 
-*KodingApi.JProxyFilterApi* | [**remove**](docs/JProxyFilterApi.md#remove) | **POST** /JProxyFilter.remove/{id} | 
-*KodingApi.JProxyFilterApi* | [**some**](docs/JProxyFilterApi.md#some) | **POST** /JProxyFilter.some | 
-*KodingApi.JProxyFilterApi* | [**update**](docs/JProxyFilterApi.md#update) | **POST** /JProxyFilter.update/{id} | 
-*KodingApi.JProxyRestrictionApi* | [**clear**](docs/JProxyRestrictionApi.md#clear) | **POST** /JProxyRestriction.clear | 
-*KodingApi.JProxyRestrictionApi* | [**create**](docs/JProxyRestrictionApi.md#create) | **POST** /JProxyRestriction.create | 
-*KodingApi.JProxyRestrictionApi* | [**remove**](docs/JProxyRestrictionApi.md#remove) | **POST** /JProxyRestriction.remove | 
-*KodingApi.JProxyRestrictionApi* | [**some**](docs/JProxyRestrictionApi.md#some) | **POST** /JProxyRestriction.some | 
 *KodingApi.JRewardApi* | [**addCustomReward**](docs/JRewardApi.md#addCustomReward) | **POST** /JReward.addCustomReward | 
 *KodingApi.JRewardApi* | [**fetchCustomData**](docs/JRewardApi.md#fetchCustomData) | **POST** /JReward.fetchCustomData | 
 *KodingApi.JRewardApi* | [**fetchEarnedAmount**](docs/JRewardApi.md#fetchEarnedAmount) | **POST** /JReward.fetchEarnedAmount | 
@@ -413,8 +406,6 @@ Class | Method | HTTP request | Description
  - [KodingApi.JProposedDomain](docs/JProposedDomain.md)
  - [KodingApi.JProposedDomainProxy](docs/JProposedDomainProxy.md)
  - [KodingApi.JProvisioner](docs/JProvisioner.md)
- - [KodingApi.JProxyFilter](docs/JProxyFilter.md)
- - [KodingApi.JProxyRestriction](docs/JProxyRestriction.md)
  - [KodingApi.JReward](docs/JReward.md)
  - [KodingApi.JRewardCampaign](docs/JRewardCampaign.md)
  - [KodingApi.JSession](docs/JSession.md)
