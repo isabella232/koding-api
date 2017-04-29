@@ -734,7 +734,7 @@ Name | Type | Description  | Notes
 
 
 
-
+Method JGroup.fetchDataAt
 
 ### Example
 ```javascript

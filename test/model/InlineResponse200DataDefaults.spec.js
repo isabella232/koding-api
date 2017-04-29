@@ -28,7 +28,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new KodingApi.InlineResponse200();
+    instance = new KodingApi.InlineResponse200DataDefaults();
   });
 
   var getProperty = function(object, getter, property) {
@@ -47,28 +47,16 @@
       object[property] = value;
   }
 
-  describe('InlineResponse200', function() {
-    it('should create an instance of InlineResponse200', function() {
-      // uncomment below and update the code to test InlineResponse200
-      //var instane = new KodingApi.InlineResponse200();
-      //expect(instance).to.be.a(KodingApi.InlineResponse200);
+  describe('InlineResponse200DataDefaults', function() {
+    it('should create an instance of InlineResponse200DataDefaults', function() {
+      // uncomment below and update the code to test InlineResponse200DataDefaults
+      //var instane = new KodingApi.InlineResponse200DataDefaults();
+      //expect(instance).to.be.a(KodingApi.InlineResponse200DataDefaults);
     });
 
-    it('should have the property ok (base name: "ok")', function() {
-      // uncomment below and update the code to test the property ok
-      //var instane = new KodingApi.InlineResponse200();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property error (base name: "error")', function() {
-      // uncomment below and update the code to test the property error
-      //var instane = new KodingApi.InlineResponse200();
-      //expect(instance).to.be();
-    });
-
-    it('should have the property data (base name: "data")', function() {
-      // uncomment below and update the code to test the property data
-      //var instane = new KodingApi.InlineResponse200();
+    it('should have the property userInputs (base name: "userInputs")', function() {
+      // uncomment below and update the code to test the property userInputs
+      //var instane = new KodingApi.InlineResponse200DataDefaults();
       //expect(instance).to.be();
     });
 

@@ -258,6 +258,42 @@
 
 
     /**
+     * Method ComputeProvider.setGroupStack
+     * @param {module:koding-api/DefaultSelector} body body of the request
+     * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:koding-api/DefaultResponse}
+     */
+    this.setGroupStack = function(body) {
+      var postBody = body;
+
+      // verify the required parameter 'body' is set
+      if (body == undefined || body == null) {
+        throw new Error("Missing the required parameter 'body' when calling setGroupStack");
+      }
+
+
+      var pathParams = {
+      };
+      var queryParams = {
+      };
+      var headerParams = {
+      };
+      var formParams = {
+      };
+
+      var authNames = ['Bearer'];
+      var contentTypes = ['application/json'];
+      var accepts = [];
+      var returnType = DefaultResponse;
+
+      return this.apiClient.callApi(
+        '/ComputeProvider.setGroupStack', 'POST',
+        pathParams, queryParams, headerParams, formParams, postBody,
+        authNames, contentTypes, accepts, returnType
+      );
+    }
+
+
+    /**
      * 
      * @param {module:koding-api/DefaultSelector} body body of the request
      * @return {Promise} a {@link https://www.promisejs.org/|Promise}, with data of type {@link module:koding-api/DefaultResponse}

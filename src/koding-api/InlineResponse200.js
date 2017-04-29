@@ -14,18 +14,18 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
     // AMD. Register as an anonymous module.
-    define(['ApiClient', 'koding-api/InlineResponse200Defaults'], factory);
+    define(['ApiClient', 'koding-api/InlineResponse200Data'], factory);
   } else if (typeof module === 'object' && module.exports) {
     // CommonJS-like environments that support module.exports, like Node.
-    module.exports = factory(require('../ApiClient'), require('./InlineResponse200Defaults'));
+    module.exports = factory(require('../ApiClient'), require('./InlineResponse200Data'));
   } else {
     // Browser globals (root is window)
     if (!root.KodingApi) {
       root.KodingApi = {};
     }
-    root.KodingApi.InlineResponse200 = factory(root.KodingApi.ApiClient, root.KodingApi.InlineResponse200Defaults);
+    root.KodingApi.InlineResponse200 = factory(root.KodingApi.ApiClient, root.KodingApi.InlineResponse200Data);
   }
-}(this, function(ApiClient, InlineResponse200Defaults) {
+}(this, function(ApiClient, InlineResponse200Data) {
   'use strict';
 
 
@@ -61,33 +61,33 @@
     if (data) {
       obj = obj || new exports();
 
-      if (data.hasOwnProperty('json')) {
-        obj['json'] = ApiClient.convertToType(data['json'], 'String');
+      if (data.hasOwnProperty('ok')) {
+        obj['ok'] = ApiClient.convertToType(data['ok'], 'Boolean');
       }
-      if (data.hasOwnProperty('yaml')) {
-        obj['yaml'] = ApiClient.convertToType(data['yaml'], 'String');
+      if (data.hasOwnProperty('error')) {
+        obj['error'] = ApiClient.convertToType(data['error'], Object);
       }
-      if (data.hasOwnProperty('defaults')) {
-        obj['defaults'] = InlineResponse200Defaults.constructFromObject(data['defaults']);
+      if (data.hasOwnProperty('data')) {
+        obj['data'] = InlineResponse200Data.constructFromObject(data['data']);
       }
     }
     return obj;
   }
 
   /**
-   * @member {String} json
-   * @default '{}'
+   * If the request processed by endpoint
+   * @member {Boolean} ok
    */
-  exports.prototype['json'] = '{}';
+  exports.prototype['ok'] = undefined;
   /**
-   * @member {String} yaml
-   * @default '--'
+   * Error description
+   * @member {Object} error
    */
-  exports.prototype['yaml'] = '--';
+  exports.prototype['error'] = undefined;
   /**
-   * @member {module:koding-api/InlineResponse200Defaults} defaults
+   * @member {module:koding-api/InlineResponse200Data} data
    */
-  exports.prototype['defaults'] = undefined;
+  exports.prototype['data'] = undefined;
 
 
 

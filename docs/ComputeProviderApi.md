@@ -10,6 +10,7 @@ Method | HTTP request | Description
 [**fetchProviders**](ComputeProviderApi.md#fetchProviders) | **POST** /ComputeProvider.fetchProviders | 
 [**ping**](ComputeProviderApi.md#ping) | **POST** /ComputeProvider.ping | 
 [**remove**](ComputeProviderApi.md#remove) | **POST** /ComputeProvider.remove | 
+[**setGroupStack**](ComputeProviderApi.md#setGroupStack) | **POST** /ComputeProvider.setGroupStack | 
 [**update**](ComputeProviderApi.md#update) | **POST** /ComputeProvider.update | 
 [**updateTeamCounters**](ComputeProviderApi.md#updateTeamCounters) | **POST** /ComputeProvider.updateTeamCounters | 
 
@@ -276,6 +277,56 @@ var apiInstance = new KodingApi.ComputeProviderApi();
 var body = new KodingApi.DefaultSelector(); // DefaultSelector | body of the request
 
 apiInstance.remove(body).then(function(data) {
+  console.log('API called successfully. Returned data: ' + data);
+}, function(error) {
+  console.error(error);
+});
+
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**DefaultSelector**](DefaultSelector.md)| body of the request | 
+
+### Return type
+
+[**DefaultResponse**](DefaultResponse.md)
+
+### Authorization
+
+[Bearer](../README.md#Bearer)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: Not defined
+
+<a name="setGroupStack"></a>
+# **setGroupStack**
+> DefaultResponse setGroupStack(body)
+
+
+
+Method ComputeProvider.setGroupStack
+
+### Example
+```javascript
+var KodingApi = require('koding-api');
+var defaultClient = KodingApi.ApiClient.default;
+
+// Configure API key authorization: Bearer
+var Bearer = defaultClient.authentications['Bearer'];
+Bearer.apiKey = 'YOUR API KEY';
+// Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
+//Bearer.apiKeyPrefix = 'Token';
+
+var apiInstance = new KodingApi.ComputeProviderApi();
+
+var body = new KodingApi.DefaultSelector(); // DefaultSelector | body of the request
+
+apiInstance.setGroupStack(body).then(function(data) {
   console.log('API called successfully. Returned data: ' + data);
 }, function(error) {
   console.error(error);

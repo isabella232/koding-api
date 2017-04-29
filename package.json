@@ -1,6 +1,6 @@
 {
   "name": "koding-api",
-  "version": "0.0.3-1",
+  "version": "0.0.3-2",
   "description": "Koding API for integrating your application with Koding services",
   "license": "Apache-2.0",
   "main": "src/index.js",

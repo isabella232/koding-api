@@ -79,6 +79,7 @@ Class | Method | HTTP request | Description
 *KodingApi.ComputeProviderApi* | [**fetchProviders**](docs/ComputeProviderApi.md#fetchProviders) | **POST** /ComputeProvider.fetchProviders | 
 *KodingApi.ComputeProviderApi* | [**ping**](docs/ComputeProviderApi.md#ping) | **POST** /ComputeProvider.ping | 
 *KodingApi.ComputeProviderApi* | [**remove**](docs/ComputeProviderApi.md#remove) | **POST** /ComputeProvider.remove | 
+*KodingApi.ComputeProviderApi* | [**setGroupStack**](docs/ComputeProviderApi.md#setGroupStack) | **POST** /ComputeProvider.setGroupStack | 
 *KodingApi.ComputeProviderApi* | [**update**](docs/ComputeProviderApi.md#update) | **POST** /ComputeProvider.update | 
 *KodingApi.ComputeProviderApi* | [**updateTeamCounters**](docs/ComputeProviderApi.md#updateTeamCounters) | **POST** /ComputeProvider.updateTeamCounters | 
 *KodingApi.DataDogApi* | [**sendEvent**](docs/DataDogApi.md#sendEvent) | **POST** /DataDog.sendEvent | 
@@ -375,7 +376,8 @@ Class | Method | HTTP request | Description
  - [KodingApi.DefaultSelector](docs/DefaultSelector.md)
  - [KodingApi.Error](docs/Error.md)
  - [KodingApi.InlineResponse200](docs/InlineResponse200.md)
- - [KodingApi.InlineResponse200Defaults](docs/InlineResponse200Defaults.md)
+ - [KodingApi.InlineResponse200Data](docs/InlineResponse200Data.md)
+ - [KodingApi.InlineResponse200DataDefaults](docs/InlineResponse200DataDefaults.md)
  - [KodingApi.JAccount](docs/JAccount.md)
  - [KodingApi.JAccountProfile](docs/JAccountProfile.md)
  - [KodingApi.JApiToken](docs/JApiToken.md)
